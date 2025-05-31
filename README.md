@@ -1,1 +1,0 @@
-# MF-Seasonality-Analysis-Tool

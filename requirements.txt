@@ -1,6 +1,0 @@
-matplotlib 
-streamlit
-seaborn
-pandas
-mftool
-tqdm

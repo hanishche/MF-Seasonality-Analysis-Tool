@@ -1,0 +1,9 @@
+streamlit
+pandas
+openpyxl
+plotly
+mysql
+bcrypt
+datetime
+mysql-connector-python
+streamlit-aggrid

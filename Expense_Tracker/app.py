@@ -7,11 +7,10 @@ from datetime import datetime
 import calendar
 
 # ---- MySQL Connection ----
-
-DB_HOST = st.secrets["mysql"]["host"]
-DB_USER = st.secrets["mysql"]["user"]
-DB_PASSWORD = st.secrets["mysql"]["password"]
-DB_NAME = st.secrets["mysql"]["database"]
+DB_HOST = '127.0.0.1'
+DB_USER = 'root'
+DB_PASSWORD = 'Hanju@1993'
+DB_NAME = 'expense_tracker'
 
 def get_db_connection():
     return mysql.connector.connect(

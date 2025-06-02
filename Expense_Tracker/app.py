@@ -11,6 +11,8 @@ DB_HOST = st.secrets["mysql"]["host"]
 DB_USER = st.secrets["mysql"]["user"]
 DB_PASSWORD = st.secrets["mysql"]["password"]
 DB_NAME = st.secrets["mysql"]["database"]
+DB_PORT = int(st.secrets["mysql"].get("port", 3306))
+
 # Ensure the secrets are set correctly
 
 def get_db_connection():
@@ -18,7 +20,8 @@ def get_db_connection():
         host=DB_HOST,
         user=DB_USER,
         password=DB_PASSWORD,
-        database=DB_NAME
+        database=DB_NAME,
+        port=DB_PORT
     )
 
 get_db_connection()

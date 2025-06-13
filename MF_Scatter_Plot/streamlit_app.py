@@ -6,11 +6,12 @@ st.set_page_config(page_title="Risk vs Returns Scatter Plot", layout="wide")  # 
 # Sidebar controls
 st.sidebar.title("Filters")
 
-# Load data
+#Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r'data\final_data.csv')
-    return df
+    # Path relative to the script's directory
+    data_path = os.path.join(os.path.dirname(__file__), "data", "final_data.csv")
+    return pd.read_csv(data_path)
 
 df_final = load_data()
 

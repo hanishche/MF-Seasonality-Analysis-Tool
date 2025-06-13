@@ -9,7 +9,7 @@ st.sidebar.title("Filters")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r'C:\Users\hanis\source\repos\streamlit\streamlit\MF_Scatter_Plot\data\final_data.csv')
+    df = pd.read_csv(r'MF_Scatter_Plot\data\final_data.csv')
     return df
 
 df_final = load_data()

@@ -9,8 +9,9 @@ st.sidebar.title("Filters")
 #Load data
 @st.cache_data
 def load_data():
-    # Path relative to the script's directory
     data_path = os.path.join(os.path.dirname(__file__), "data", "final_data.csv")
+    if not os.path.exists(data_path):
+        raise FileNotFoundError(f"Data file not found at: {data_path}")
     return pd.read_csv(data_path)
 
 df_final = load_data()

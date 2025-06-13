@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import os
 
 st.set_page_config(page_title="Risk vs Returns Scatter Plot", layout="wide")  # <-- MUST BE FIRST
 # Sidebar controls
